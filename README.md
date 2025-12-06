@@ -15,7 +15,7 @@ advanced features supassing defaults versions will be in dedicated folders.
 * [x] Basic “Hello World”
 * [x] Variables of all primitive types (`int`, `long long`, `float`, `double`, `char`, `bool`)
 * [x]  `auto` type deduction examples (simple, ambiguous cases)
-* [ ]  `constexpr` variable and `constexpr` function
+* [x]  `constexpr` variable and `constexpr` function
 * [ ]  Input/output with `std::cin` and `std::cout`
 * [ ]  Enum, enum class, strong typing
 
