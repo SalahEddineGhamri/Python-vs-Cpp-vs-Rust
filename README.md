@@ -26,41 +26,40 @@ advanced features supassing defaults versions will be in dedicated folders.
 * [X] `if / else` examples covering nested + chained
 * [X] `switch` with enum + default branch
 * [X] All loop types: `for`, `while`, `do while`
-* [ ] Range-based for loop over arrays, vectors, initializer_list
-* [ ] Early return, `continue`, `break`
+* [X] Range-based for loop over arrays, vectors, initializer_list
+* [X] Early return, `continue`, `break`
 
 ---
 
 ## **3. Functions**
 
-* Basic function returning value
-* Pass-by-value / reference / pointer versions
-* `inline` function demo
-* Function overloading (matching rules)
-* Default arguments
-* Variadic template function (`template<typename... Args>`)
-* Lambda expressions: captures (by value, by ref, mixed), mutable lambda
+* [x] Basic function returning value
+* [x] Pass-by-value / reference / pointer versions
+* [x] `inline` function demo
+* [x] Function overloading (matching rules)
+* [x] Default arguments
+* [ ] Variadic template function (`template<typename... Args>`)
+* [ ] Lambda expressions: captures (by value, by ref, mixed), mutable lambda
 
 ---
 
 ## **4. Error Handling**
 
-* Basic `try/catch`
-* Throwing custom exceptions
-* Exception safety example (RAII rollback on failure)
-* `noexcept` function with and without violation
+* [ ] Basic `try/catch`
+* [ ] Throwing custom exceptions
+* [ ] Exception safety example (RAII rollback on failure)
+* [ ] `noexcept` function with and without violation
 
 ---
 
 ## **5. Essential Memory & Pointers**
 
-* Pointer basics: address printing, dereferencing, pointer arithmetic
-* Double pointer (`T**`) example
-* `new` / `delete`
-* `new[]` / `delete[]`
-* Dangling pointer example (controlled)
-* Smart pointers:
-
+* [ ] Pointer basics: address printing, dereferencing, pointer arithmetic
+* [ ] Double pointer (`T**`) example
+* [ ] `new` / `delete`
+* [ ] `new[]` / `delete[]`
+* [ ] Dangling pointer example (controlled)
+* [ ] Smart pointers:
   * `std::unique_ptr` (create, release, reset)
   * `std::shared_ptr` (use_count)
   * `std::weak_ptr` (lock and expiry detection)
@@ -219,7 +218,6 @@ Write examples for:
 * Write a tiny HTTP GET client
 * Parse a JSON manually (no libs)
 * Use `<filesystem>`:
-
   * Walk directories
   * Query file size
   * Create/remove directories
@@ -228,11 +226,11 @@ Write examples for:
 
 ## **17. Testing & Tooling**
 
-* Minimal CMake project
-* Header vs source file separation
-* Unit testing with Catch2 or GoogleTest
-* Static analysis demonstration (clang-tidy)
-* Benchmarks using `<chrono>` high_resolution_clock
+* [ ] Minimal CMake project
+* [ ] Header vs source file separation
+* [ ] Unit testing with Catch2 or GoogleTest
+* [ ] Static analysis demonstration (clang-tidy)
+* [ ] Benchmarks using `<chrono>` high_resolution_clock
 
 # Python roadmap
 # Rust roadmap
