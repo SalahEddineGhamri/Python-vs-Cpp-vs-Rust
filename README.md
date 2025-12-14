@@ -55,7 +55,7 @@ advanced features supassing defaults versions will be in dedicated folders.
 ## **5. Essential Memory & Pointers**
 
 * [X] Pointer basics: address printing, dereferencing, pointer arithmetic
-* [ ] Double pointer (`T**`) example
+* [x] Double pointer (`T**`) example
 * [ ] `new` / `delete`
 * [ ] `new[]` / `delete[]`
 * [ ] Dangling pointer example (controlled)
@@ -113,17 +113,17 @@ advanced features supassing defaults versions will be in dedicated folders.
 
 Create full examples for:
 
-* `std::vector` (push, emplace, erase, reserve)
-* `std::array`
-* `std::deque`
-* `std::list`
-* `std::forward_list`
-* `std::map` / `std::unordered_map`
-* `std::set` / `std::unordered_set`
-* `std::priority_queue`
-* `std::stack` / `std::queue`
-* `std::tuple`
-* `std::pair`
+* [ ] `std::vector` (push, emplace, erase, reserve)
+* [ ] `std::array`
+* [x] `std::deque`
+* [ ] `std::list`
+* [ ] `std::forward_list`
+* [ ] `std::map` / `std::unordered_map`
+* [ ] `std::set` / `std::unordered_set`
+* [ ] `std::priority_queue`
+* [ ] `std::stack` / `std::queue`
+* [ ] `std::tuple`
+* [ ] `std::pair`
 
 For each container:
 
