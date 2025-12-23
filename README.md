@@ -59,53 +59,53 @@ advanced features supassing defaults versions will be in dedicated folders.
 * [ ] `new` / `delete`
 * [ ] `new[]` / `delete[]`
 * [ ] Dangling pointer example (controlled)
-* [ ] Smart pointers:
+* [X] Smart pointers:
   * `std::unique_ptr` (create, release, reset)
   * `std::shared_ptr` (use_count)
   * `std::weak_ptr` (lock and expiry detection)
-* RAII wrapper class you write yourself
+* [x] RAII wrapper class you write yourself
 
 ---
 
 ## **6. Object-Oriented Programming**
 
-* Class with constructor, destructor
-* Overloaded constructors
-* `explicit` constructor and why it matters
-* Copy constructor + copy assignment operator
-* Move constructor + move assignment operator
-* Virtual methods + overriding
-* Abstract class + pure virtual function
-* Inheritance example (Vehicle → Car)
-* `final` class and `override` keyword
-* Rule of 3, 5, 0 examples
-* Static methods and static members
-* Operator overloading (`<<`, `==`, `<`, `[]`, `()`, arithmetic operators)
+* [x] Class with constructor, destructor
+* [x] Overloaded constructors
+* [ ] `explicit` constructor and why it matters
+* [x] Copy constructor + copy assignment operator
+* [x] Move constructor + move assignment operator
+* [ ] Virtual methods + overriding
+* [ ] Abstract class + pure virtual function
+* [ ] Inheritance example (Vehicle → Car)
+* [ ] `final` class and `override` keyword
+* [ ] Rule of 3, 5, 0 examples
+* [ ] Static methods and static members
+* [x] Operator overloading (`<<`, `==`, `<`, `[]`, `()`, arithmetic operators)
 
 ---
 
 ## **7. Modern C++17 Features**
 
-* Structured bindings (auto [a, b] = …)
-* `std::optional`
-* `std::variant` + `std::visit`
-* `std::any`
-* `if constexpr` inside template
-* Inline variables
-* Fold expressions
+* [ ] Structured bindings (auto [a, b] = …)
+* [ ] `std::optional`
+* [ ] `std::variant` + `std::visit`
+* [ ] `std::any`
+* [ ] `if constexpr` inside template
+* [ ] Inline variables
+* [ ] Fold expressions
 
 ---
 
 ## **8. Templates (Mastery Required)**
 
-* Function templates
-* Class templates
-* Template specialization (full + partial)
-* SFINAE example (`std::enable_if`)
-* Trait class: write your own `is_integer<T>`
-* CRTP (Curiously Recurring Template Pattern)
-* Non-type template parameters (`template<int N>`)
-* Compile-time array operations using templates
+* [ ] Function templates
+* [ ] Class templates
+* [ ] Template specialization (full + partial)
+* [ ] SFINAE example (`std::enable_if`)
+* [ ] Trait class: write your own `is_integer<T>`
+* [ ] CRTP (Curiously Recurring Template Pattern)
+* [ ] Non-type template parameters (`template<int N>`)
+* [ ] Compile-time array operations using templates
 
 ---
 
