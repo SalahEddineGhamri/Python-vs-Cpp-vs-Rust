@@ -4,14 +4,13 @@
 //         usage with different underlying containers,
 //         common patterns, pitfalls, and constraints.
 //
-// Compile with: g++ -std=c++17 -Wall -Wextra -O2 std_stack_tutorial.cpp -o std_stack_tutorial
-//
+// Compile with: g++ -std=c++17 -Wall -Wextra -O2 % -o %<
+// Debug with: g++ -std=c++17 -Wall -Wextra -O0 -g % -o %<
 // This file builds cleanly and runs on any C++17-compliant compiler.
 
 #include <iostream>
 #include <stack>
 #include <vector>
-#include <deque>
 #include <list>
 #include <string>
 

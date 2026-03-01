@@ -14,10 +14,10 @@ advanced features supassing defaults versions will be in dedicated folders.
 
 * [x] Basic “Hello World”
 * [x] Variables of all primitive types (`int`, `long long`, `float`, `double`, `char`, `bool`)
-* [x]  `auto` type deduction examples (simple, ambiguous cases)
-* [x]  `constexpr` variable and `constexpr` function
-* [x]  Input/output with `std::cin` and `std::cout`
-* [x]  Enum, enum class, strong typing
+* [x] `auto` type deduction examples (simple, ambiguous cases)
+* [x] `constexpr` variable and `constexpr` function
+* [x] Input/output with `std::cin` and `std::cout`
+* [x] Enum, enum class, strong typing
 
 ---
 
@@ -60,9 +60,9 @@ advanced features supassing defaults versions will be in dedicated folders.
 * [x] `new[]` / `delete[]`
 * [x] Dangling pointer example (controlled)
 * [X] Smart pointers:
-  * `std::unique_ptr` (create, release, reset)
-  * `std::shared_ptr` (use_count)
-  * `std::weak_ptr` (lock and expiry detection)
+  * [x] `std::unique_ptr` (create, release, reset)
+  * [x] `std::shared_ptr` (use_count)
+  * [x] `std::weak_ptr` (lock and expiry detection)
 * [x] RAII wrapper class you write yourself
 
 ---
@@ -78,7 +78,7 @@ advanced features supassing defaults versions will be in dedicated folders.
 * [x] Abstract class + pure virtual function
 * [x] Inheritance example (Vehicle → Car)
 * [x] `final` class and `override` keyword
-* [ ] Rule of 3, 5, 0 examples
+* [x] Rule of 3, 5, 0 examples
 * [x] Static methods and static members
 * [x] Operator overloading (`<<`, `==`, `<`, `[]`, `()`, arithmetic operators)
 
@@ -92,20 +92,20 @@ advanced features supassing defaults versions will be in dedicated folders.
 * [ ] `std::any`
 * [ ] `if constexpr` inside template
 * [ ] Inline variables
-* [ ] Fold expressions
+* [ ] * Fold expressions
 
 ---
 
 ## **8. Templates (Mastery Required)**
 
-* [ ] Function templates
-* [ ] Class templates
-* [ ] Template specialization (full + partial)
-* [ ] SFINAE example (`std::enable_if`)
-* [ ] Trait class: write your own `is_integer<T>`
-* [ ] CRTP (Curiously Recurring Template Pattern)
-* [ ] Non-type template parameters (`template<int N>`)
-* [ ] Compile-time array operations using templates
+* [x] Function templates
+* [x] Class templates
+* [x] Template specialization (full + partial)
+* [x] SFINAE example (`std::enable_if`)
+* [x] Trait class: write your own `is_integer<T>`
+* [x] CRTP (Curiously Recurring Template Pattern)
+* [x] Non-type template parameters (`template<int N>`)
+* [x] Compile-time array operations using templates
 
 ---
 
@@ -116,7 +116,7 @@ Create full examples for:
 * [x] `std::vector` (push, emplace, erase, reserve)
 * [x] `std::deque`
 * [x] `std::stack` / `std::queue`
-* [ ] `std::map` / `std::unordered_map`
+* [X] `std::map` / `std::unordered_map`
 * [ ] `std::pair`
 * [ ] `std::tuple`
 * [ ] `std::list`
@@ -124,6 +124,7 @@ Create full examples for:
 * [ ] `std::set` / `std::unordered_set`
 * [ ] `std::priority_queue`
 * [ ] `std::array`
+* [ ] `std::string`
 
 For each container:
     * iteration (classic, range-for, iterator)
@@ -267,6 +268,89 @@ Write examples for:
 -  [ ] Policy-based Design
 -  [ ] Expression Templates
 -  [ ] Self-registering Factory
+
+## **23. Software Architecture & System Design**
+* [ ] Layered architecture: Presentation / Application / Domain / Infrastructure layers
+* [ ] Hexagonal (Ports & Adapters) architecture example
+* [ ] Microservices vs monolith trade-offs in C++
+* [ ] Dependency injection (manual or with a small library like Boost.DI)
+* [ ] Component-based design (e.g., Entity-Component-System skeleton)
+* [ ] Event-driven architecture with observer + queues
+* [ ] Design a medium system: e.g., a logging service with pluggable backends (file, network, console)
+* [ ] When to use: Layers for separation of concerns; hexagonal when you want to swap DB/network easily
+
+## **24. Large-Scale Codebase Practices**
+* [ ] Module boundaries: public API in headers, private impl in .cpp or Pimpl
+* [ ] Compile-time reduction: forward declarations, Pimpl idiom, precompiled headers
+* [ ] Build systems beyond basics: CMake with targets, exported interfaces, install rules
+* [ ] Linking: static vs shared libraries, versioned symbols
+* [ ] ABI stability considerations
+* [ ] Code organization: one library per concern, clear dependency graph
+* [ ] Refactoring large code: incremental changes, tests as safety net
+* [ ] When to use: Pimpl to hide third-party headers and speed builds; separate libs to allow partial linking
+
+## **25. Debugging & Diagnostics in Real-World Code**
+* [ ] GDB basics: breakpoints, watchpoints, backtrace, inspect variables
+* [ ] Conditional breakpoints and logging with macros
+* [ ] Core dump analysis (gdb on core files)
+* [ ] Valgrind: memcheck (leaks, invalid reads), callgrind (profiling)
+* [ ] Sanitizers: AddressSanitizer (ASan), UndefinedBehaviorSanitizer (UBSan), ThreadSanitizer (TSan)
+* [ ] Logging frameworks: spdlog or simple custom logger with levels
+* [ ] Crash handling: signal handlers, stack traces with backtrace()
+* [ ] Debug vs Release builds: assertions, debug symbols
+* [ ] Mini-project: Intentionally introduce memory leak + race condition, then find/fix with tools
+* [ ] When to use: Sanitizers in dev; Valgrind for deep memory issues; logging in production
+
+## **26. Domain-Specific Knowledge**
+### Networking
+* [ ] Deep dive into TCP/UDP client-server (non-blocking with select/poll)
+* [ ] Asynchronous I/O with Boost.Asio (allowed since it's header-only and widely used)
+* [ ] HTTP server from scratch (parse requests, send responses)
+* [ ] WebSocket basics (handshake + framing)
+* [ ] Serialization: protobuf vs flatbuffers vs custom binary
+* [ ] When to use: Asio for scalable servers; raw sockets for learning/low-level control
+
+### Databases
+* [ ] SQLite integration (sqlite3 C API wrapper in C++)
+* [ ] Basic ORM-like wrapper (RAII transactions, prepared statements)
+* [ ] Connection pooling skeleton
+* [ ] PostgreSQL/MySQL with libpq or mysql-connector (concepts, not full drivers)
+* [ ] Query building safety (avoid string concat, use params)
+* [ ] When to use: SQLite for embedded/local storage; external drivers for server DBs
+
+### Embedded / Low-Level Systems
+* [ ] Cross-compilation basics (CMake toolchain file)
+* [ ] Volatile keyword and memory barriers
+* [ ] Interrupt-safe code patterns
+* [ ] Fixed-point arithmetic instead of float
+* [ ] Bit manipulation: bitfields, unions, endianness
+* [ ] Real-time constraints: avoid dynamic allocation, prefer stack
+* [ ] Bare-metal hello world (no stdlib, linker script intro)
+* [ ] When to use: These patterns on microcontrollers or drivers; avoid new/delete in hard real-time
+
+## **27. Putting It All Together – Capstone Projects**
+These combine everything to force "connecting the dots" at senior level.
+
+* [ ] Multi-threaded key-value store
+  - In-memory hash map
+  - Thread-safe with mutex + reader-writer lock
+  - Persistence to disk (binary or SQLite)
+  - Simple TCP interface (put/get commands)
+  - Logging + crash recovery
+  - Built with CMake, tested with GoogleTest, profiled with sanitizers
+
+* [ ] Mini game engine skeleton
+  - Entity-component system (CRTP or type-erased)
+  - Event system (observer pattern)
+  - Resource manager with RAII + smart pointers
+  - Main loop with fixed timestep
+  - Optional: simple OpenGL renderer stub
+
+* [ ] High-performance data processor
+  - Read large CSV (memory-mapped or chunked)
+  - Parallel processing with thread pool + async
+  - Custom allocator benchmark
+  - Output JSON or binary
 
 # Python roadmap
 # Rust roadmap

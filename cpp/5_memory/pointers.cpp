@@ -70,8 +70,9 @@ int main() {
     rx = 123;
 
     // Prefer containers/iterators to raw arithmetic
-    for (auto it = a.begin(); it != a.end(); ++it)
+    for (auto it = a.begin(); it != a.end(); ++it) {
         cout << *it << " ";
+    }
     cout << "\n";
 
     // Prefer span (C++20) / gsl::span for bounds-safe views (hint)
