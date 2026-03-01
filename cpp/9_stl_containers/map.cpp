@@ -340,12 +340,12 @@ int main()
     lookup();
     ordered_features();
     custom_comparator();
-    //custom_hash();
-    //performance_notes();
-    //erase_patterns();
-    //frequency_count();
-    //advanced_tips();
-    //benchmark();
+    custom_hash();
+    performance_notes();
+    erase_patterns();
+    frequency_count();
+    advanced_tips();
+    benchmark();
 
     std::cout << "\nAll demonstrations completed.\n";
 }
