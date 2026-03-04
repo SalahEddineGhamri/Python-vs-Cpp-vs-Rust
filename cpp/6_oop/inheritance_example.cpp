@@ -11,7 +11,7 @@
 // ================================================================
 class Vehicle {
 protected:                  // Accessible to derived classes
-    std::string brand;
+    std::string brand
     int         year;
 
 public:

@@ -290,7 +290,7 @@ Write examples for:
 * [ ] When to use: Pimpl to hide third-party headers and speed builds; separate libs to allow partial linking
 
 ## **25. Debugging & Diagnostics in Real-World Code**
-* [ ] GDB basics: breakpoints, watchpoints, backtrace, inspect variables
+* [x] GDB basics: breakpoints, watchpoints, backtrace, inspect variables
 * [ ] Conditional breakpoints and logging with macros
 * [ ] Core dump analysis (gdb on core files)
 * [ ] Valgrind: memcheck (leaks, invalid reads), callgrind (profiling)
